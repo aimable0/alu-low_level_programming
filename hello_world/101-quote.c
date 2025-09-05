@@ -7,8 +7,8 @@
  * Return: Always 0 (Success)
  */
 
-int main() {
-const char *msg = "This is an error message\n";
+int main(void) {
+const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 write(2, msg, strlen(msg)); // 2 = stderr
 return (1);
 }
