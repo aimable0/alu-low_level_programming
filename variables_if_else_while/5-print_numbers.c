@@ -8,14 +8,11 @@
 int main(void)
 {
 int i;
-for (i = 97; i <= 122; i++)
+for (i = 0; i < 10; i++)
 {
-if (i != 101 && i != 113)
-{
-putchar(i);
+printf("%d", i);
 }
-}
-putchar('\n');
+printf("\n");
 
 return (0);
 }
