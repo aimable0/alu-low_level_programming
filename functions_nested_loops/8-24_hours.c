@@ -5,7 +5,7 @@
  *
  * Return: void always
  */
-void _print_time(time);
+void _print_time(int time);
 
 void jack_bauer(void)
 {
@@ -22,7 +22,7 @@ void jack_bauer(void)
     }
 }
 
-void _print_time(time)
+void _print_time(int time)
 {
     if (time < 10)
     {
