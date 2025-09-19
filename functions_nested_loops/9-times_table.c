@@ -2,12 +2,13 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the last digit of a number.
+ * times_table(void) - prints teh 9 times tables
+ * starting from 0
  *
  * Return: void always.
  */
 
 void times_table(void)
 {
-
+    
 }
