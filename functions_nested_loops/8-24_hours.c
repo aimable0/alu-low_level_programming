@@ -7,8 +7,6 @@
  * Return: void always
  */
 
-void _print_time(int time);
-
 void jack_bauer(void)
 {
 int hr, min;
@@ -21,19 +19,5 @@ _putchar(':');
 _print_time(min);
 _putchar('\n');
 }
-}
-}
-
-void _print_time(int time)
-{
-if (time < 10)
-{
-_putchar('0');
-_putchar(time + '0');
-}
-else
-{
-_putchar(((time - (time % 10)) / 10) + '0');
-_putchar((time % 10) + '0');
 }
 }
