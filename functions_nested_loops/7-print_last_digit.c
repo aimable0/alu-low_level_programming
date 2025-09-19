@@ -10,8 +10,7 @@
 
 int print_last_digit(int n)
 {
-// handle negative number
-if (n < 0)
+if (n < 0) /* handle negative number */
 _putchar((-n % 10) + '0');
 else
 _putchar((n % 10) + '0');
