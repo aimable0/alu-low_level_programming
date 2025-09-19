@@ -20,7 +20,7 @@ for (hr = 0; hr < 24; hr++) {
         /* handling hours */
         if (hr < 10) {
             _putchar('0');
-            putchar(hr + '0');
+            _putchar(hr + '0');
         } else {
             /* displaying hours with 2 digits */
             int last_digit = hr % 10;
