@@ -51,5 +51,5 @@ _putchar(last_num + '0');
 }
 _putchar('\n');
 }
-    }
+}
 }
