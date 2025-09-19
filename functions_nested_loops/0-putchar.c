@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include "main.h"
 
+#define LENGTH 9
 /**
  * main - Entry point
  *
@@ -8,6 +10,11 @@
 
 int main(void)
 {
-printf("_putchar\n");
-return 0;
+    char string[LENGTH] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
+    int i = 0;
+
+    for(i = 0; i < LENGTH; i++) {
+        _putchar(string[i]);
+    }
+    return 0;
 }
