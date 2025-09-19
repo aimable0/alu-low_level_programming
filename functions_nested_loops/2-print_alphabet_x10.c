@@ -20,6 +20,6 @@ for (i = 0; i < 26; i++)
 _putchar(a++);
 }
 _putchar(10);
-a = 97; // reset back to a;
+a = 97; /* reseting back to 'a' */
 }
 }
