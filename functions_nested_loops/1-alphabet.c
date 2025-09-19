@@ -1,18 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 
-#define LENGTH 9
 /**
- * main - Entry point
+ * print_alphabet - writes the all characters to stdout
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
-
-int main(void)
-{
-print_alphabet();
-return (0);
-}
 
 void print_alphabet(void)
 {
