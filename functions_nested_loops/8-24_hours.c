@@ -8,9 +8,10 @@
  */
 void jack_bauer(void)
 {
-for (int hr = 0; hr < 24; hr++)
+int hr, min;
+for (hr = 0; hr < 24; hr++)
 {
-for (int min = 0; min < 60; min++)
+for (min = 0; min < 60; min++)
 {
 if (hr < 10)
 {
