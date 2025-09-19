@@ -10,6 +10,10 @@
 
 int print_last_digit(int n)
 {
+// handle negative number
+if (n < 0)
+_putchar((-n % 10) + '0');
+else
 _putchar((n % 10) + '0');
 return (n % 10);
 }
