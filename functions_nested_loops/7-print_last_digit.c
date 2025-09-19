@@ -11,14 +11,10 @@
 
 int print_last_digit(int n)
 {
-if (n == INT_MIN) {
-_putchar(56);
-return (8);
-}
-else if (n < 0)
+if (n < 0)
 {
-_putchar((-n % 10) + '0');
-return (-n % 10);
+_putchar(-(n % 10) + '0');
+return (n % 10);
 }
 else
 {
