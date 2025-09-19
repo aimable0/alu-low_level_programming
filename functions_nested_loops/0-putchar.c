@@ -15,7 +15,7 @@ int i = 0;
 
 for (i = 0; i < LENGTH; i++)
 {
-    _putchar(string[i]);
+_putchar(string[i]);
 }
 return (0);
 }
