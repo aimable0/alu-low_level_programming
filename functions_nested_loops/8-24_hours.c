@@ -3,9 +3,24 @@
 
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer
- *
- * Return: void always
+ * _print_time - prints time in double digit format
+ * @time: time hr or time min.
  */
+
+void _print_time(int time)
+{
+if (time < 10)
+{
+_putchar('0');
+_putchar(time + '0');
+}
+else
+{
+_putchar(((time - (time % 10)) / 10) + '0');
+_putchar((time % 10) + '0');
+}
+}
+
 
 void jack_bauer(void)
 {
