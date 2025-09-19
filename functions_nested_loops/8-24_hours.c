@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * _print_time - prints time in double digit format
+ * @time: time in hr or time in min.
+ * Return: always void
+ */
 
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer
- * _print_time - prints time in double digit format
- * @time: time hr or time min.
+ * Return: always void
  */
 
 void _print_time(int time)
@@ -20,7 +24,6 @@ _putchar(((time - (time % 10)) / 10) + '0');
 _putchar((time % 10) + '0');
 }
 }
-
 
 void jack_bauer(void)
 {
