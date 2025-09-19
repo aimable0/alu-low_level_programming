@@ -10,11 +10,11 @@
 
 void jack_bauer(void)
 {
-    int min = 0;
-    int hr = 0;
+int min = 0;
+int hr = 0;
 
-    for (hr = 0; hr < 24; hr++)
-    {
+for (hr = 0; hr < 24; hr++)
+{
 for (min = 0; min < 60; min++)
 {
 
