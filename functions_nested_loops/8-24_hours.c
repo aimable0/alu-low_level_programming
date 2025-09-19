@@ -6,12 +6,6 @@
  * Return: always void
  */
 
-/**
- * jack_bauer - prints every minute of the day of Jack Bauer
- *
- * Return: always void
- */
-
 void _print_time(int time)
 {
 if (time < 10)
@@ -25,6 +19,12 @@ _putchar(((time - (time % 10)) / 10) + '0');
 _putchar((time % 10) + '0');
 }
 }
+
+/**
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ *
+ * Return: always void
+ */
 
 void jack_bauer(void)
 {
