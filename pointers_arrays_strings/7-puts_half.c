@@ -29,7 +29,7 @@ write(1, &c, 1);
 }
 else
 {
-for (i = ((len - 1) / 2) - 1; i < len ; i++)
+for (i = ((len - 1) / 2) + 2; i < len ; i++)
 {
 c = str[i];
 write(1, &c, 1);
