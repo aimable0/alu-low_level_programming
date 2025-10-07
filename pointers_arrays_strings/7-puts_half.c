@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <unistd.h>
 
 /**
  * puts_half - prints second half of a string
@@ -17,10 +17,9 @@ while (str[len] != '\0')
 len++;
 }
 
-i = (len % 2 == 0) ? len / 2 : (len - 1) / 2;
-for (; i < len ; i++)
+for (i = (len % 2 == 0) ? len / 2 : (len - 1) / 2; i < len ; i++)
 {
-putchar(str[i]);
+write(1, &str[i], 1);
 }
-putchar('\n');
+write(1, '\n', 1);
 }
