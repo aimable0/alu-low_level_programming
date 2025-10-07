@@ -18,8 +18,7 @@ while (str[len] != '\0')
 len++;
 }
 
-
-// for (i = (len % 2 == 0) ? len / 2 : (len - 1) / 2; i < len ; i++);
+/* for (i = (len % 2 == 0) ? len / 2 : (len - 1) / 2; i < len ; i++); */
 for (i = len / 2; i < len ; i++)
 {
 c = str[i];
