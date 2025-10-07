@@ -18,10 +18,10 @@ while (src[len] != '\0')
 len++;
 }
 
-for(i = 0; i <= len; i++)
+for (i = 0; i <= len; i++)
 {
 temp = src[i];
 dest[i] = temp;
 }
-return dest;
+return (dest);
 }
