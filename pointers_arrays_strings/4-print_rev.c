@@ -15,9 +15,9 @@ while (s[len] != '\0')
 len++;
 }
 
-while(--len)
+while(len > 0)
 {
-_putchar(s[len]);
+_putchar(s[--len]);
 }
 _putchar('\n');
 }
