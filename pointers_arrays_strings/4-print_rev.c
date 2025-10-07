@@ -14,7 +14,7 @@ int len = 10;
 
 while (*(s + ++i) != '\0')
 {
-len++; // calculates string's length
+len++;
 }
 
 for (i = len; i >= 0; i--)
