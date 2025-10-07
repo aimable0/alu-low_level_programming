@@ -17,7 +17,7 @@ while (src[len] != '\0')
 len++;
 }
 
-for(int i = 0; i <= len; i++)
+for(i = 0; i <= len; i++)
 {
 temp = src[i];
 dest[i] = temp;
