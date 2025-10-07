@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "main.h"
 
 /**
  * puts_half - prints second half of a string
