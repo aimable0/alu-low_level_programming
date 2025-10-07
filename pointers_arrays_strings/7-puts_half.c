@@ -18,22 +18,9 @@ while (str[len] != '\0')
 len++;
 }
 
-/* for (i = (len % 2 == 0) ? len / 2 : (len - 1) / 2; i < len ; i++); */
-if (len % 2 == 0)
+for (i = (len % 2 == 0) ? len / 2 : ((len - 1) / 2) + 1; i < len ; i++);
 {
-for (i = len / 2; i < len ; i++)
-{
-c = str[i];
-write(1, &c, 1);
-}
-}
-else
-{
-for (i = ((len - 1) / 2) + 1; i < len ; i++)
-{
-c = str[i];
-write(1, &c, 1);
-}
+write(1, &str[i], 1);
 }
 c = '\n';
 write(1, &c, 1);
