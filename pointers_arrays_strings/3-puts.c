@@ -10,7 +10,7 @@ int _puts(char *s)
 int i = -1;
 while (*(s + ++i) != '\0')
 {
-_putchar(s[i]);
+putchar(s[i]);
 }
-_putchar('\n');
+putchar('\n');
 }
