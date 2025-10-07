@@ -19,7 +19,7 @@ len++;
 }
 
 
-for (i = (len % 2 == 0) ? len / 2 : (len - 1) / 2; i < len -1 ; i++)
+for (i = (len % 2 == 0) ? len / 2 : (len - 1) / 2; i < len ; i++)
 {
 c = str[i];
 write(1, &c, 1);
