@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+/**
+ * _puts - prints a string
+ * @s: variable whose string's is to be printed on stdout
+ * Return: Always void
+ */
+int _puts(char *s)
+{
+int i = -1;
+while (*(s + ++i) != '\0')
+{
+_putchar(s[i]);
+}
+_putchar('\n');
+}
