@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/**
+ *print_array - prints second half of a string
+ * @a: array of integers
+ * @n: number of integers to print
+ * Return: Always void
+ */
+
+void print_array(char *a, int n)
+{
+int i = 0;
+
+for (i = 0; i < n; i++)
+{
+printf("%i, ", a[i]);
+}
+}

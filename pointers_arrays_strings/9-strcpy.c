@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strcpy - prints second half of a string
+ * _strcpy - copies string.
  * @src: source string (to copy from)
  * @dest: destination (to copy to)
  * Return: Always dest
