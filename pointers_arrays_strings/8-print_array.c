@@ -13,13 +13,14 @@ int i = 0;
 
 if (n < 1)
 {
+    printf("\n");
     return;
 }
 
 if (n == 1)
 {
-    printf("%i\n", a[i]);
-    return;
+printf("%i\n", a[i]);
+return;
 }
 for (i = 0; i < n; i++)
 {
