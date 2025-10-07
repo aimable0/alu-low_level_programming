@@ -5,7 +5,7 @@
  * @s: variable whose string's is to be printed on stdout
  * Return: Always void
  */
-int _puts(char *s)
+void _puts(char *s)
 {
 int i = -1;
 while (*(s + ++i) != '\0')
