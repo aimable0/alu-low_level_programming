@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *print_array - prints second half of a string
+ *print_array - prints n elements of an array of integers, followed by a new line.
  * @a: array of integers
  * @n: number of integers to print
  * Return: Always void
@@ -16,7 +16,6 @@ if (n < 1)
 printf("\n");
 return;
 }
-
 
 
 for (i = 0; i < n; i++)
