@@ -1,32 +1,27 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
- * check_prime - helper function to test divisibility recursively
- * @n: the number to check
- * @i: the current divisor
- *
- * Return: 1 if n is prime, 0 otherwise
- */
+/* Helper funciton */
 int check_prime(int n, int i)
 {
-    if (i * i > n) /* no divisor found up to sqrt(n) */
-        return (1);
-    if (n % i == 0) /* found a divisor */
-        return (0);
-    return (check_prime(n, i + 1)); /* test next divisor */
+if (i * i > n)
+return 1;
+if (n % i == 0)
+return 0;
+return check_prime(n, ++i);
 }
 
 /**
- * is_prime_number - returns 1 if the input integer is a prime number,
- * otherwise returns 0
- * @n: number to check
+ * is_prime_number - detects if a number is a prime number.
+ * @n: integer number to check for.
  *
- * Return: 1 if prime, 0 otherwise
+ * Return: 1 if prime and 0 otherwise.
  */
+
 int is_prime_number(int n)
 {
-    if (n <= 1)
-        return (0);
-    return (check_prime(n, 2)); /* start testing from 2 */
+if (n <= 1)
+return (0);
+else
+return check_prime(n, 2);
 }
