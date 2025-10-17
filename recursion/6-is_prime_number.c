@@ -4,7 +4,7 @@
 /**
  * check_prime - detects if a number is a prime number using recursion.
  * @n: number to check.
- * @n: divisors.
+ * @i: divisors.
  *
  * Return: 1 if prime and 0 otherwise.
  */
