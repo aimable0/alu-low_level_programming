@@ -1,31 +1,23 @@
 #include <stdio.h>
-#include <math.h>
 #include "main.h"
+
+/**
+ * is_prime_number - detects if a number is a prime number.
+ * @n: integer number to check for.
+ *
+ * Return: 1 if prime and 0 otherwise.
+ */
+
 
 int is_prime_number(int n)
 {
-int i = 0;
-int limit = (int)sqrt((double)n);
+    if (n <= 1)
+        return 0;
 
-if (n <= 1)
-{
-return 0;
-}
-if (n == 2)
-{
-return 1;
-}
-if (n % 2 == 0)
-{
-return 0;
-}
-
-for (i = 3; i <= limit; i += 2)
-{
-if (n % i == 0)
-{
-return (0);
-}
-}
-return 1;
+    for (int i = 0; i < n; i++)
+    {
+        if (i != 1 && i != n && n % i == 0)
+            return 0;
+    }
+    return 1;
 }
