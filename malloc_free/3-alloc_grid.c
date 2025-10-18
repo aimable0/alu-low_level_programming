@@ -23,11 +23,12 @@ arr[i][j] = 0;
 }
 
 /**
- * alloc_grid - creates a 2D Array
- * @width: cols
- * @height: rows
+ * alloc_grid - Allocates a 2D array of integers.
+ * @width: Number of columns.
+ * @height: Number of rows.
  *
- * Returns: array of integers
+ * Return: Pointer to the newly allocated 2D array of integers,
+ *         or NULL if memory allocation fails or if width/height is invalid.
  */
 int **alloc_grid(int width, int height)
 {
