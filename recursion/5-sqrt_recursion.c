@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+#include "main.h"
 
 int _sqrt_recursion(int n);
 int _has_natural_sqrt(int n, int i);
