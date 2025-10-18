@@ -9,35 +9,35 @@
  */
 char *_strdup(char *str)
 {
-    int i = 0;
-    int len = 0;
-    char *str_cpy;
+int i = 0;
+int len = 0;
+char *str_cpy;
 
-    if (str == NULL)
-    {
-        return (NULL);
-    }
+if (str == NULL)
+{
+return (NULL);
+}
 
-    /* calculate length */
-    while (str[i] != '\0')
-    {
-        ++i;
-        ++len;
-    }
-    len += 1; /* for the null terminator */
+/* calculate length */
+while (str[i] != '\0')
+{
+++i;
+++len;
+}
+len += 1; /* for the null terminator */
 
-    str_cpy = malloc(sizeof(char) * len);
+str_cpy = malloc(sizeof(char) * len);
 
-    if (str_cpy == NULL)
-    {
-        return (NULL);
-    }
+if (str_cpy == NULL)
+{
+return (NULL);
+}
 
-    /* copy */
-    for (i = 0; i <= len; i++)
-    {
-        str_cpy[i] = str[i];
-    }
+/* copy */
+for (i = 0; i <= len; i++)
+{
+str_cpy[i] = str[i];
+}
 
-    return (str_cpy);
+return (str_cpy);
 }
