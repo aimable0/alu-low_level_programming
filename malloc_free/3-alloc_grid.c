@@ -47,7 +47,7 @@ int **alloc_grid(int width, int height)
         return (NULL);
     }
 
-    // create cols
+    /* create cols */
     for (i = 0; i < height; i++)
     {
         arr[i] = malloc(sizeof(int) * width);
