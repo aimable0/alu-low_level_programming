@@ -34,13 +34,14 @@ void initialize_array(int **arr, int width, int height)
 int **alloc_grid(int width, int height)
 {
     int i = 0;
+    int **arr;
 
     if (width < 1)
         return (NULL);
     if (height < 1)
         return (NULL);
 
-    int **arr = malloc(sizeof(int *) * height);
+    arr = malloc(sizeof(int *) * height);
     if (arr == NULL)
     {
         return (NULL);
