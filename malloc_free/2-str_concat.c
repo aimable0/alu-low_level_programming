@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * concat_string - concatinates two string into one new string
+ * concat_strings - concatinates two string into one new string
  * @s1: string
  * @s2: string
  * @len_s1: length of string 1
