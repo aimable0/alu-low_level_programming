@@ -35,7 +35,7 @@ char *_strdup(char *str)
     /* copy */
     for (i = 0; i <= len; i++)
     {
-        str_cpy[i] == str[i];
+        str_cpy[i] = str[i];
     }
 
     return (str_cpy);
