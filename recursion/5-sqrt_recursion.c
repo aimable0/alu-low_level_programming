@@ -9,7 +9,7 @@ double compute_sqrt(double x, double y);
 /**
  * _has_natural_sqrt - checks if a number has a natural sqrt
  * @n: number to check for
- * @i: recursion changing parameter
+ * @i: recursion's changing parameter - starts with 1.
  *
  * Returns 1 if n has natural sqrt and 0 otherwise.
  */
@@ -48,7 +48,7 @@ double compute_sqrt(double x, double y)
  */
 int _sqrt_recursion(int n)
 {
-    if (_has_natural_sqrt == -1)
+    if (_has_natural_sqrt(n, 1) == -1)
         return -1;
     return (int)compute_sqrt((double)n, 1.0);
 }
