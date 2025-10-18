@@ -16,11 +16,15 @@ double compute_sqrt(double x, double y);
 
 int _has_natural_sqrt(int n, int i)
 {
-    if (i * i > n)
-        return -1;
-    if (i * i == n)
-        return 1;
-    return _has_natural_sqrt(n, ++i);
+if (i * i > n)
+{
+return (-1);
+}
+if (i * i == n)
+{
+return (1);
+}
+return (_has_natural_sqrt(n, ++i));
 }
 
 /**
@@ -32,12 +36,14 @@ int _has_natural_sqrt(int n, int i)
  */
 double compute_sqrt(double x, double y)
 {
-    double new_y = ((x / y) + y) / 2.0;
-    if (fabs(new_y - y) < 0.0001)
-        return new_y;
+double new_y = ((x / y) + y) / 2.0;
+if (fabs(new_y - y) < 0.0001)
+{
+return (new_y);
+}
 
-    y = new_y;
-    return compute_sqrt(x, y);
+y = new_y;
+return (compute_sqrt(x, y));
 }
 
 /**
@@ -48,7 +54,7 @@ double compute_sqrt(double x, double y)
  */
 int _sqrt_recursion(int n)
 {
-    if (_has_natural_sqrt(n, 1) == -1)
-        return -1;
-    return (int)compute_sqrt((double)n, 1.0);
+if (_has_natural_sqrt(n, 1) == -1)
+return (-1);
+return ((int)compute_sqrt((double)n, 1.0));
 }
