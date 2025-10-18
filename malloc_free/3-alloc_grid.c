@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
 /**
  * initialize_array - initializes 2D-Array's element with zero
  * @arr: two dimensional array
@@ -25,7 +23,7 @@ arr[i][j] = 0;
 }
 
 /**
- * alloc-grid - creates a 2D Array
+ * alloc_grid - creates a 2D Array
  * @width: cols
  * @height: rows
  *
@@ -65,5 +63,5 @@ return (NULL);
 }
 
 initialize_array(arr, width, height);
-return arr;
+return (arr);
 }
