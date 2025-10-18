@@ -47,10 +47,11 @@ return (compute_sqrt(x, y));
 }
 
 /**
- * compute_sqrt - computes sqrt of x using newtons method
- * @n: floating point number
+ * _sqrt_recursion - calculates the natural sqrt of a number
+ * @n: int number
  *
- * Returns (int) natural sqrt of n nad -1 if number has no natural sqrt.
+ * Returns (int) natural sqrt of a number and
+ *           -1 if number has no natural sqrt.
  */
 int _sqrt_recursion(int n)
 {
