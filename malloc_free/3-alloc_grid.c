@@ -13,15 +13,15 @@
  */
 void initialize_array(int **arr, int width, int height)
 {
-    int i = 0;
-    int j = 0;
-    for (i = 0; i < height; i++)
-    {
-        for (j = 0; j < width; j++)
-        {
-            arr[i][j] = 0;
-        }
-    }
+int i = 0;
+int j = 0;
+for (i = 0; i < height; i++)
+{
+for (j = 0; j < width; j++)
+{
+arr[i][j] = 0;
+}
+}
 }
 
 /**
@@ -33,36 +33,37 @@ void initialize_array(int **arr, int width, int height)
  */
 int **alloc_grid(int width, int height)
 {
-    int i = 0;
-    int j = 0;
-    int **arr;
+int i = 0;
+int j = 0;
+int **arr;
 
-    if (width < 1)
-        return (NULL);
-    if (height < 1)
-        return (NULL);
+if (width < 1)
+return (NULL);
+if (height < 1)
+return (NULL);
 
-    arr = malloc(sizeof(int *) * height);
-    if (arr == NULL)
-    {
-        return (NULL);
-    }
+arr = malloc(sizeof(int *) * height);
+if (arr == NULL)
+{
+return (NULL);
+}
 
-    /* create cols */
-    for (i = 0; i < height; i++)
-    {
-        arr[i] = malloc(sizeof(int) * width);
-        if (arr[i] == NULL)
-        {
-            for (j = 0; j < i; j++)
-            {
-                free(arr[j]);
-            }
-            free(arr);
-            return (NULL);
-        }
-    }
+/* create cols */
+for (i = 0; i < height; i++)
+{
+arr[i] = malloc(sizeof(int) * width);
+if (arr[i] == NULL)
+{
+/* free everything if malloc fails */
+for (j = 0; j < i; j++)
+{
+free(arr[j]);
+}
+free(arr);
+return (NULL);
+}
+}
 
-    initialize_array(arr, width, height);
-    return arr;
+initialize_array(arr, width, height);
+return arr;
 }
