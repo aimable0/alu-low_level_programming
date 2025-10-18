@@ -11,52 +11,52 @@
 
 char *str_concat(char *s1, char *s2)
 {
-    int i = 0;
-    int j = 0;
-    char *concat;
-    int len_s1 = 0;
-    int len_s2 = 0;
+int i = 0;
+int j = 0;
+char *concat;
+int len_s1 = 0;
+int len_s2 = 0;
 
-    if (s1 != NULL) /* not very effecient logic */
-    {
-        while(s1[i] != '\0')
-        {
-            i++;
-            ++len_s1;
-        }
-    }
+if (s1 != NULL) /* not very effecient logic */
+{
+while(s1[i] != '\0')
+{
+i++;
+++len_s1;
+}
+}
 
-    if (s2 != NULL) /* not very effecient logic */
-    {
-        i = 0;
-        while(s2[i] != '\0')
-        {
-            i++;
-            ++len_s2;
-        }
-        ++len_s2;
-    }
+if (s2 != NULL) /* not very effecient logic */
+{
+i = 0;
+while(s2[i] != '\0')
+{
+i++;
+++len_s2;
+}
+++len_s2;
+}
 
-    /* create a new memory block */
-    concat = malloc(sizeof(char) * (len_s1 + len_s2));
+/* create a new memory block */
+concat = malloc(sizeof(char) * (len_s1 + len_s2));
 
-    /* check */
-    if (concat == NULL)
-    {
-        return NULL;
-    }
+/* check */
+if (concat == NULL)
+{
+return (NULL);
+}
 
-    for (i = 0; i < len_s1; i++)
-    {
-        concat[i] = s1[i];
-    }
+for (i = 0; i < len_s1; i++)
+{
+concat[i] = s1[i];
+}
 
-    for (i = len_s1; i < (len_s1 + len_s2); i++, j++)
-    {
-        concat[i] = s2[j];
-    }
+for (i = len_s1; i < (len_s1 + len_s2); i++, j++)
+{
+concat[i] = s2[j];
+}
 
-    concat[len_s1 + len_s2] = '\0';
+concat[len_s1 + len_s2] = '\0';
 
-    return concat;
+return (concat);
 }
