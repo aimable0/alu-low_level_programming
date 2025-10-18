@@ -47,7 +47,6 @@ char *concat_strings(char *concat, char *s1, char *s2, int len_s1, int len_s2)
 char *str_concat(char *s1, char *s2)
 {
     int i = 0;
-    int j = 0;
     char *concat;
     int len_s1 = 0;
     int len_s2 = 0;
