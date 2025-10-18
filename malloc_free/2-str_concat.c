@@ -17,25 +17,27 @@ char *str_concat(char *s1, char *s2)
     int len_s1 = 0;
     int len_s2 = 0;
 
-    if (s1 == NULL || s2 == NULL) /* not very effecient logic */
+    if (s1 != NULL) /* not very effecient logic */
     {
-        return (NULL);
+        while(s1[i] != '\0')
+        {
+            i++;
+            ++len_s1;
+        }
     }
 
-    while(s1[i] != '\0')
+    if (s2 != NULL) /* not very effecient logic */
     {
-        i++;
-        ++len_s1;
-    }
-
-    i = 0;
-    while(s2[i] != '\0')
-    {
-        i++;
+        i = 0;
+        while(s2[i] != '\0')
+        {
+            i++;
+            ++len_s2;
+        }
         ++len_s2;
     }
-    ++len_s2;
 
+    /* create a new memory block */
     concat = malloc(sizeof(char) * (len_s1 + len_s2));
 
     /* check */
