@@ -7,7 +7,7 @@
  * @width: cols
  * @height: rows
  *
- * Returns void Always
+ * Returns: void Always
  */
 void initialize_array(int **arr, int width, int height)
 {
@@ -27,7 +27,7 @@ arr[i][j] = 0;
  * @width: cols
  * @height: rows
  *
- * Returns pointer to a 2-Dimensional array of integers
+ * Returns: array of integers
  */
 int **alloc_grid(int width, int height)
 {
