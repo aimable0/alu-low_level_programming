@@ -21,6 +21,7 @@ char *_strdup(char *str)
     /* calculate length */
     while (str[i] != '\0')
     {
+        ++i;
         ++len;
     }
     len += 1; /* for the null terminator */
