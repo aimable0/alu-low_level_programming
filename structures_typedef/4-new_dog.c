@@ -30,7 +30,7 @@ int _strlen(char *string)
     while (string[i] != '\0')
         i++;
 
-    return i + 1;
+    return i;
 }
 
 dog_t *new_dog(char *name, float age, char *owner)
