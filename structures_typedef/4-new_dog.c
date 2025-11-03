@@ -9,7 +9,7 @@ dog_t *new_dog(char *name, float age, char *owner)
     dog.name = malloc(sizeof(char) * 50);
     dog.owner = malloc(sizeof(char) * 50);
 
-    if (dog.name != NULL, name != NULL && owner != NULL, dog.owner != NULL)
+    if (dog.name != NULL && name != NULL && owner != NULL && dog.owner != NULL)
     {
         dog.age = age;
 
