@@ -4,8 +4,11 @@
 #include <string.h>
 #define EXIT_FAILURE 1
 /**
- * init_dog - initializes a variable of type struct dog
- *!params here..
+ * init_dog - initializes a variable of type struct dog.
+ * @d: struct dog.
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
  *
  * Return: Nothing
  */
