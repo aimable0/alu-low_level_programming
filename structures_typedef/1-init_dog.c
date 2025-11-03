@@ -11,8 +11,8 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
     int i = 0;
-    d->name = malloc(sizeof(char) * 50);
-    d->owner = malloc(sizeof(char) * 50);
+    d->name = calloc(50, sizeof(char));
+    d->owner = calloc(50, sizeof(char));
     if (d->name == NULL)
     {
         printf("No memory allocated\n");
