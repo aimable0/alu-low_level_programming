@@ -4,32 +4,40 @@
 
 void _strcpy(char *dest, char *src)
 {
-    int i = 0;
+int i = 0;
 
-    if (dest == NULL)
-        return;
-    if (src == NULL)
-        return;
+if (dest == NULL)
+{
+return;
+}
+if (src == NULL)
+{
+return;
+}
 
-    while (src[i] != '\0')
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    dest[i] = '\0';
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
 }
 
 int _strlen(char *string)
 {
-    int i = 0;
+int i = 0;
 
-    if (string == NULL)
-        return 0;
+if (string == NULL)
+{
+return 0;
+}
 
-    while (string[i] != '\0')
-        i++;
+while (string[i] != '\0')
+{
+i++;
+}
 
-    return i;
+return (i);
 }
 
 dog_t *new_dog(char *name, float age, char *owner)
