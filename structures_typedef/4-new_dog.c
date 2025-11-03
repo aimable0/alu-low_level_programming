@@ -3,11 +3,12 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    dog_t dog1;
-    dog_t *dog = &dog1;
+    dog_t *dog;
     int i = 0;
+    dog->name = malloc(sizeof(char) * 50);
+    dog->owner = malloc(sizeof(char) * 50);
 
-    if (name != NULL && owner != NULL)
+    if (dog->name != NULL, name != NULL && owner != NULL, dog->owner != NULL)
     {
         dog->age = age;
 
@@ -30,6 +31,8 @@ dog_t *new_dog(char *name, float age, char *owner)
     }
     else
     {
+        free(dog->name);
+        free(dog->owner);
         return NULL;
     }
     return dog;
