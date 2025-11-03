@@ -1,7 +1,8 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-
+#define EXIT_FAILURE 1
 /**
  * init_dog - initializes a variable of type struct dog
  *!params here..
@@ -10,9 +11,15 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-    if (d == NULL)
-        return;
-    d->name = name;
-    d->owner = owner;
-    d->age = age;
+    if (d != NULL && name != NULL && owner != NULL)
+    {
+        d->name = name;
+        d->owner = owner;
+        d->age = age;
+    }
+    else
+    {
+        printf("Ok\n");
+        exit(1);
+    }
 }
