@@ -20,6 +20,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
     else
     {
         printf("Ok\n");
-        exit(1);
+        exit(EXIT_FAILURE);
     }
 }
