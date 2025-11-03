@@ -10,6 +10,7 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+    int i = 0;
     d->name = malloc(sizeof(char) * 50);
     d->owner = malloc(sizeof(char) * 50);
     if (d->name == NULL)
@@ -23,6 +24,16 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
         return;
     }
 
-   
+    /* copy */
+    while (name[i] != '\0')
+        d->name[i] = name[i];
+    d->name[i] = '\0';
+
+    i = 0; /* reset i for a fresch copy*/
+    while (owner[i] != '\0')
+        d->owner[i] = owner[i];
+    d->owner[i] = '\0';
+
+    // add a \0
     d->age = age;
 }
