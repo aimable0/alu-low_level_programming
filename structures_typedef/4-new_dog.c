@@ -9,14 +9,20 @@ dog_t *new_dog(char *name, float age, char *owner)
     int i = 0;
 
     /* allocate memory */
-    dog.name = malloc(sizeof(char) * 50);
-    dog.owner = malloc(sizeof(char) * 50);
+    while (name[i] != '\0')
+        i++;
+    dog.name = malloc(sizeof(char) * i);
+
+    while (name[i] != '\0')
+        i++;
+    dog.owner = malloc(sizeof(char) * i);
 
     if (dog.name != NULL && name != NULL && owner != NULL && dog.owner != NULL)
     {
         dog.age = age;
 
         /* copy name */
+        i = 0;
         while (name[i] != '\0')
         {
             dog.name[i] = name[i];
