@@ -3,7 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+int main(void)
+{
+    dog_t *my_dog;
 
+    my_dog = new_dog("Ghost", 4.75, "Jon Snow");
+
+    printf("My name is %s, and I am %.1f :) with my owner %s - Woof!\n", my_dog->name, my_dog->age, my_dog->owner);
+    return (0);
+}
 
 void _strcpy(char *dest, char *src)
 {
@@ -38,13 +46,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 
     _strcpy(dog.name, name);
 
-    dog.owner = malloc(sizeof(char) * 50);
-    if (dog.owner == NULL)
-    {
-        free(dog.name);
-        free(dog.owner);
-        return NULL;
-    }
+    // dog.owner = malloc(sizeof(char) * 50);
+    // if (dog.owner == NULL)
+    // {
+    //     free(dog.name);
+    //     free(dog.owner);
+    //     return NULL;
+    // }
 
     _strcpy(dog.owner, owner);
 
