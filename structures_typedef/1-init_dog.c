@@ -34,6 +34,5 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
         d->owner[i] = owner[i];
     d->owner[i] = '\0';
 
-    // add a \0
     d->age = age;
 }
