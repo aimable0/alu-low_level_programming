@@ -36,5 +36,7 @@ dog_t *new_dog(char *name, float age, char *owner)
         free(dog.owner);
         return NULL;
     }
-    return &dog;
+
+    dog_t *new_dog = &dog;
+    return new_dog;
 }
