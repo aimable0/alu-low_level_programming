@@ -6,8 +6,8 @@
 typedef struct dog
 {
     char *owner;
-    float age;
     char *name;
+    float age;
 } dog;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
