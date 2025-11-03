@@ -20,3 +20,10 @@ int main(void)
     //     free(dog.owner);
     //     return NULL;
     // }
+
+    //     dog.name = malloc(sizeof(char) * 50);
+    // if (dog.name == NULL)
+    // {
+    //     free(dog.name);
+    //     return NULL;
+    // }
