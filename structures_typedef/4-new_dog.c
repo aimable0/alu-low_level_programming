@@ -5,7 +5,10 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
     dog_t dog;
+    dog_t *new_dog = &dog;
     int i = 0;
+
+    /* allocate memory */
     dog.name = malloc(sizeof(char) * 50);
     dog.owner = malloc(sizeof(char) * 50);
 
@@ -37,6 +40,5 @@ dog_t *new_dog(char *name, float age, char *owner)
         return NULL;
     }
 
-    dog_t *new_dog = &dog;
     return new_dog;
 }
