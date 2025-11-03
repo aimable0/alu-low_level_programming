@@ -1,0 +1,29 @@
+#include "dog.h"
+#include <stdio.h>
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+    dog_t *dog;
+    int i = 0;
+
+    if (dog != NULL && name != NULL && owner != NULL)
+    {
+        dog->age = age;
+
+        /* copy name */
+        while (name[i] != '\0')
+            dog->name[i] = name[i++];
+        dog->name[i] = '\0';
+
+        /* copy owner & reset i */
+        i = 0;
+        while (owner[i] != '\0')
+            dog->owner[i] = owner[i++];
+        dog->owner[i] = '\0';
+    }
+    else
+    {
+        return;
+    }
+    return dog;
+}
