@@ -6,7 +6,7 @@ dog_t *new_dog(char *name, float age, char *owner)
     dog_t *dog;
     int i = 0;
 
-    if (dog != NULL && name != NULL && owner != NULL)
+    if (name != NULL && owner != NULL)
     {
         dog->age = age;
 
@@ -29,7 +29,7 @@ dog_t *new_dog(char *name, float age, char *owner)
     }
     else
     {
-        return 1;
+        return NULL;
     }
     return dog;
 }
