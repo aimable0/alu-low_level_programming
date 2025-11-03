@@ -22,8 +22,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
         printf("No memory allocated\n");
         return;
     }
-    
-    strcpy(d->name, name);
-    strcpy(d->owner, owner);
+
+   
     d->age = age;
 }
