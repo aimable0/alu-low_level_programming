@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     /* let's assume user are kind and they will comply hahah :)*/
     if (argc != 4)
     {
-        print("Error\n");
+        printf("Error\n");
         return 98;
     }
 
