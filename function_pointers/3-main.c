@@ -13,7 +13,8 @@ int main(int argc, char *argv[])
     /* let's assume user are kind and they will comply hahah :)*/
     if (argc != 4)
     {
-        return 1;
+        print("Error\n");
+        return 98;
     }
 
     /*! le'ts break the rule abit */
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
     if (operation == NULL)
     {
         printf("Error\n");
-        return 1;
+        return 99;
     }
     result = operation(operand_1, operand_2);
     printf("%d\n", result);
