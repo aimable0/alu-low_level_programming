@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     result = operation(operand_1, operand_2);
-    printf("%d", result);
+    printf("%d\n", result);
 
     return (0);
 }
