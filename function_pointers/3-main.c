@@ -5,19 +5,21 @@
 int main(int argc, char *argv[])
 {
     int (*operation)(int, int);
-    int operand_1 = atoi(argv[1]);
-    char *operator = argv[2];
-    int operand_2 = atoi(argv[3]);
+    int operand_1;
+    char *operator;
+    int operand_2;
     int result = 0;
 
-    /* let's assume user are kind and they will comply hahah :)*/
     if (argc != 4)
     {
         printf("Error\n");
         return 98;
     }
 
-    /*! le'ts break the rule abit */
+    operand_1 = atoi(argv[1]);
+    operand_2 = atoi(argv[3]);
+    operator = argv[2];
+
     operation = get_op_func(operator);
     if (operation == NULL)
     {
