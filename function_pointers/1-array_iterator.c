@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * array_iterator - a function that executes a function given as a parameter on each element of an array.
+ * array_iterator - a function that executes another function (action)
+ *                  given as a parameter on each element of an array.
  * @array: an array of integers
  * @size: size of array
  * @action: action to be carried out for each element of an array.
