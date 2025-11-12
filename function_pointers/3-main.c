@@ -4,14 +4,13 @@
 
 /**
  * main - program's entry point
- * @agc: commandline argumnent count (total passed to the cmdline)
+ * @argc: commandline argumnent count (total passed to the cmdline)
  * @argv: array of commands (strings).
  *
- * Return:
- *      98: on Error(if the number of arguments is wrong)
- *      99: on Error(if the operator is illegal)
- *      100: on Error(if the user tries to divide (/ or %) by 0)
- *      0: on Success.
+ * Return: 0 on success.
+ *      98 on Error(if the number of arguments is wrong)
+ *      99 on Error(if the operator is illegal)
+ *      100 on Error(if the user tries to divide (/ or %) by 0)
  */
 int main(int argc, char *argv[])
 {
