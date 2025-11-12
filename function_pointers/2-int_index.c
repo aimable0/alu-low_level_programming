@@ -15,7 +15,14 @@ if (size <= 0)
 {
 return (-1);
 }
-if (array == NULL || cmp == NULL) {
+
+if (array == NULL)
+{
+return (-1);
+}
+
+if (cmp == NULL)
+{
 return (-1);
 }
 
